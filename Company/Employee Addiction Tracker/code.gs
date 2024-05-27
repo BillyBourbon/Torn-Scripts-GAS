@@ -149,7 +149,7 @@ function deleteTriggers(triggerIds = []){
   triggers.forEach(trigger=>{
     if(!triggerIds.includes(trigger.getUniqueId())) return
     ScriptApp.deleteTrigger(trigger)
-    triggerIds.splice(triggerIds.indexOf(trigger.getUniqueId),1)
+    triggerIds.splice(triggerIds.indexOf(trigger.getUniqueId(),1))
   })
   return triggerIds
 }
