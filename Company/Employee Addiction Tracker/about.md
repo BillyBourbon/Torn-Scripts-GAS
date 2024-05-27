@@ -1,4 +1,10 @@
-How to setup
+__**Below you can find what this script does and how to set it up**__
+
+__What it does?__
+
+At the end of each buisness day this script will run and post into the specified channel (via the webhook) a summary of the companys employees and basic sales infomation. if any users fall below the addiction or inactivity threshold (as set in the script) then the director will receive a ping in the channel alerting them so they can start smacking some sense into these lollygaggers  
+
+__How to setup__
 
 1. head over to https://script.google.com/home
 2. from here create a new project
