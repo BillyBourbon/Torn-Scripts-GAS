@@ -1,10 +1,20 @@
 __**Below you can find what this script does and how to set it up**__
 
-__What it does?__
+__**What it does?**__
 
 At the end of each buisness day this script will run and post into the specified channel (via the webhook) a summary of the companys employees and basic sales infomation. if any users fall below the addiction or inactivity threshold (as set in the script) then the director will receive a ping in the channel alerting them so they can start smacking some sense into these lollygaggers  
 
-__How to setup__
+__Example__
+
+Employee: ![image](https://github.com/BillyBourbon/Torn-Scripts-GAS/assets/87441988/70755ef6-75da-4df3-b9c8-09e0f59ef6c2)
+Company Summary: ![image](https://github.com/BillyBourbon/Torn-Scripts-GAS/assets/87441988/dc68b6db-5a16-40c7-b280-75ffb72ae711)
+Addiction/Inactivity Warning: <img width="512" alt="image" src="https://github.com/BillyBourbon/Torn-Scripts-GAS/assets/87441988/b68e7e65-89d6-4210-9488-0fdc005be839">
+
+__**Future Features**__
+
+1. feel free to suggest features and if they seem like theyll help the majority i may work to implement them
+   
+__**How to setup?**__
 
 1. head over to https://script.google.com/home
 2. from here create a new project
@@ -30,4 +40,7 @@ now that weve saved the script its time to set it up.
 6. Hit 'Allow'
 7. if youve succesfully entered a valid discord webhook and torn apikey then the setup function will now run and youll be alerted of its progress in the execution log. if succesfull the script will run daily at 1900TCT. if it fails listen to what the log says or DM Bilbosaggings [2323763] in game or on discord
 8. if you wish to deactivate the script at any time just run the 'deactivate' function from the editor
+
+__Contributions__
+
 
