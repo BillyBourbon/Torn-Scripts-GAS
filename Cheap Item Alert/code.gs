@@ -150,12 +150,20 @@ function checkData(itemsObj){
     let { name, market_value, bazaar, itemmarket } = data
     let adjustedMarketValue = market_value * ((100-alertPercent)/100)
     itemsObj[itemId].adjustedMarketValue = adjustedMarketValue
-    let filteredBazaar = bazaar.filter(a=>a.cost <= adjustedMarketValue)
-    let filteredItemmarket = itemmarket.filter(a=>a.cost <= adjustedMarketValue)
-    if(limitBazaarAlerts !== null) filteredBazaar = filteredBazaar.slice(0,limitBazaarAlerts)
-    if(limitItemmarketAlerts !== null) filteredItemmarket = filteredItemmarket.slice(0,limitItemmarketAlerts)
-    itemsObj[itemId].bazaar = filteredBazaar
-    itemsObj[itemId].itemmarket = filteredItemmarket
+    if(bazaar == null) {
+      itemsObj[itemId].bazaar = []
+    } else{
+      let filteredBazaar = bazaar.filter(a=>a.cost <= adjustedMarketValue)
+      if(limitBazaarAlerts !== null) filteredBazaar = filteredBazaar.slice(0,limitBazaarAlerts)
+      itemsObj[itemId].bazaar = filteredBazaar
+      }
+    if(itemmarket == null) {
+      itemsObj[itemId].itemmarket = []
+    } else{
+      let filteredItemmarket = itemmarket.filter(a=>a.cost <= adjustedMarketValue)         
+      if(limitItemmarketAlerts !== null) filteredItemmarket = filteredItemmarket.slice(0,limitItemmarketAlerts)
+      itemsObj[itemId].itemmarket = filteredItemmarket
+      }
   })
   return itemsObj
 }
