@@ -5,7 +5,7 @@ const webhookUrl = ``
 // Set Webhooks Username
 const webhookUsername = `Mr Slave`
 // Set Players Discord IDs To Ping
-const discordsToPing = [ `729793559594795029` ]
+const discordsToPing = [ `` ]
 
 // =================================== Api Settings ===================================
 
